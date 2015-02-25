@@ -10,14 +10,14 @@ using namespace std;
 // because it's up to you what to do with them.
 namespace std
 {
-  ohserialstream cout(Serial);
+ohserialstream cout(Serial);
 }
 
 vector<string> strings;
 
 void setup(void)
 {
-  Serial.begin(57600);
+  Serial.begin(9600);
 
   strings.push_back("Hello,");
   strings.push_back("world!");

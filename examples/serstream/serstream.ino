@@ -8,14 +8,14 @@ using namespace std;
 // because it's up to you what to do with them.
 namespace std
 {
-  ohserialstream cout(Serial);
+ohserialstream cout(Serial);
 }
 
 extern void more(void);
 
 void setup(void)
 {
-  Serial.begin(57600);
+  Serial.begin(9600);
 
   cout << "Hello, world." << endl;
 
@@ -24,7 +24,7 @@ void setup(void)
 
   float fmax = __FLT_MAX__, fmin = __FLT_MIN__;
   cout.precision(7);
-  cout << "Float " << scientific << fmax << endl; 
+  cout << "Float " << scientific << fmax << endl;
   cout << "Float " << scientific << fmin << endl;
 
   more();
